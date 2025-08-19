@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { margin: 5px 0; padding: 5px; }
+        textarea { width: 100%; height: 150px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    
+    <h1>Método da Bisseção</h1>
+
+    <label for="grau">Grau do polinômio (até 10):</label><br />
+    <input type="number" id="grau" min="1" max="10" /><br />
+
+    <div id="coeficientes"></div>
+
+    <label for="precisao">Precisão desejada:</label><br />
+    <input type="text" id="precisao" placeholder="Ex: 0.0001" /><br />
+
+    <button onclick="executarBissecao()">Calcular Raízes</button>
+
+    <textarea id="saida" readonly></textarea>
+
+    <script src="bissecao.js"></script>
+
+    
+</body>
+</html>
